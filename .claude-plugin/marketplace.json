@@ -1,0 +1,258 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-collection",
+  "description": "Every Claude Code plugin, skill, and agent aaddrick publishes on GitHub, installable from one marketplace.",
+  "owner": {
+    "name": "aaddrick",
+    "url": "https://github.com/aaddrick"
+  },
+  "plugins": [
+    {
+      "name": "attention-control",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/attention-control"
+      },
+      "description": "Output style that shapes every response for a reader with ADHD: action first, one meaning per word, state restated every turn.",
+      "category": "productivity",
+      "homepage": "https://github.com/aaddrick/attention-control",
+      "keywords": [
+        "adhd",
+        "output-style",
+        "accessibility",
+        "simplified-technical-english"
+      ]
+    },
+    {
+      "name": "building-with-typesafe-jev",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/building-with-typesafe-jev"
+      },
+      "description": "Unofficial skill for building with TypeSafe AI's Jev: typed Choice/Score/Noul decisions, calibrated-confidence routing, and 150+ community projects with a code sketch per pattern.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/building-with-typesafe-jev",
+      "keywords": [
+        "typesafe",
+        "jev",
+        "classification",
+        "structured-output"
+      ]
+    },
+    {
+      "name": "directing-agent-teams",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/directing-agent-teams"
+      },
+      "description": "A skill and nine agents for handing a large, multi-workstream build to a team of subagents run by one Director, with adversarial QA, alignment gates and clean handoffs.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/directing-agent-teams",
+      "keywords": [
+        "subagents",
+        "multi-agent",
+        "orchestration",
+        "adversarial-qa"
+      ]
+    },
+    {
+      "name": "ticketmill",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/ticketmill"
+      },
+      "description": "Batch-process GitHub issues end-to-end: contrarian-gated planning, quality and test loops, and human-reviewed batch PRs. Uses the target project's own agents.",
+      "category": "productivity",
+      "homepage": "https://github.com/aaddrick/ticketmill",
+      "keywords": [
+        "github-issues",
+        "batch",
+        "orchestration",
+        "automation"
+      ]
+    },
+    {
+      "name": "ptt",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/claude-ptt"
+      },
+      "description": "Push-to-talk voice input for Claude Code. Hold Ctrl+Space to record, release to transcribe.",
+      "category": "productivity",
+      "homepage": "https://github.com/aaddrick/claude-ptt",
+      "keywords": [
+        "voice-input",
+        "push-to-talk",
+        "whisper",
+        "accessibility"
+      ]
+    },
+    {
+      "name": "gh-cli-search",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/gh-cli-search"
+      },
+      "description": "GitHub CLI search skills for code, commits, issues, PRs and repos, with correct exclusion syntax, quoting, and platform-specific handling.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/gh-cli-search",
+      "keywords": [
+        "github",
+        "gh",
+        "cli",
+        "search"
+      ]
+    },
+    {
+      "name": "contrarian",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/contrarian"
+      },
+      "description": "Devil's advocate agent that stress-tests proposals: steel-man, severity-rated findings, and a verdict. For pre-mortems, architecture reviews and decision validation.",
+      "category": "productivity",
+      "homepage": "https://github.com/aaddrick/contrarian",
+      "keywords": [
+        "agent",
+        "pre-mortem",
+        "decision-review",
+        "devils-advocate"
+      ],
+      "strict": false,
+      "agents": [
+        "./.claude/agents/contrarian.md"
+      ]
+    },
+    {
+      "name": "implementation-pipeline",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/claude-pipeline"
+      },
+      "description": "Skills and agents from aaddrick's multi-agent implementation pipeline: brainstorming, planning, TDD, debugging, issue handling, PR processing, UI review, and reviewer/validator agents.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/claude-pipeline",
+      "keywords": [
+        "pipeline",
+        "tdd",
+        "planning",
+        "code-review",
+        "agents"
+      ],
+      "strict": false,
+      "skills": [
+        "./.claude/skills/adapting-claude-pipeline",
+        "./.claude/skills/brainstorming",
+        "./.claude/skills/bulletproof-frontend",
+        "./.claude/skills/dispatching-parallel-agents",
+        "./.claude/skills/executing-plans",
+        "./.claude/skills/handle-issues",
+        "./.claude/skills/implement-issue",
+        "./.claude/skills/improvement-loop",
+        "./.claude/skills/investigating-codebase-for-user-stories",
+        "./.claude/skills/process-pr",
+        "./.claude/skills/review-ui",
+        "./.claude/skills/subagent-driven-development",
+        "./.claude/skills/systematic-debugging",
+        "./.claude/skills/test-driven-development",
+        "./.claude/skills/ui-design-fundamentals",
+        "./.claude/skills/using-git-worktrees",
+        "./.claude/skills/using-skills",
+        "./.claude/skills/write-docblocks",
+        "./.claude/skills/writing-agents",
+        "./.claude/skills/writing-plans",
+        "./.claude/skills/writing-skills"
+      ],
+      "agents": [
+        "./.claude/agents/bash-script-craftsman.md",
+        "./.claude/agents/bats-test-validator.md",
+        "./.claude/agents/bulletproof-frontend-developer.md",
+        "./.claude/agents/cc-orchestration-writer.md",
+        "./.claude/agents/code-reviewer.md",
+        "./.claude/agents/code-simplifier.md",
+        "./.claude/agents/laravel-backend-developer.md",
+        "./.claude/agents/php-test-validator.md",
+        "./.claude/agents/phpdoc-writer.md",
+        "./.claude/agents/spec-reviewer.md",
+        "./.claude/agents/technical-doc-writer.md",
+        "./.claude/agents/ux-reviewer.md"
+      ]
+    },
+    {
+      "name": "writing-release-notes",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/dotfiles-chezmoi"
+      },
+      "description": "Skill for writing user-facing release notes for the Play Store, App Store, or GitHub Releases that don't read like a changelog.",
+      "category": "productivity",
+      "homepage": "https://github.com/aaddrick/dotfiles-chezmoi",
+      "keywords": [
+        "release-notes",
+        "writing",
+        "changelog"
+      ],
+      "strict": false,
+      "skills": [
+        "./dot_claude/skills/writing-release-notes"
+      ]
+    },
+    {
+      "name": "yaml-lsp",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/claude-code-lsps"
+      },
+      "description": "YAML language server for Claude Code: diagnostics and code intelligence. Requires `npm install -g yaml-language-server`.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/claude-code-lsps",
+      "keywords": [
+        "lsp",
+        "yaml",
+        "language-server"
+      ],
+      "strict": false,
+      "lspServers": {
+        "yaml": {
+          "command": "yaml-language-server",
+          "args": [
+            "--stdio"
+          ],
+          "extensionToLanguage": {
+            ".yaml": "yaml",
+            ".yml": "yaml"
+          }
+        }
+      }
+    },
+    {
+      "name": "bash-lsp",
+      "source": {
+        "source": "github",
+        "repo": "aaddrick/claude-code-lsps"
+      },
+      "description": "Bash language server for Claude Code: diagnostics and code intelligence. Requires `npm install -g bash-language-server`.",
+      "category": "development",
+      "homepage": "https://github.com/aaddrick/claude-code-lsps",
+      "keywords": [
+        "lsp",
+        "bash",
+        "language-server"
+      ],
+      "strict": false,
+      "lspServers": {
+        "bash": {
+          "command": "bash-language-server",
+          "args": [
+            "start"
+          ],
+          "extensionToLanguage": {
+            ".sh": "shellscript",
+            ".bash": "shellscript",
+            ".zsh": "shellscript"
+          }
+        }
+      }
+    }
+  ]
+}
